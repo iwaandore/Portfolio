@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./jquery-3.6.3.min.js"></script>
+    <title>Document</title>
+
+    <script>
+
+        //function showContact() {
+          //  $('#lista-media').show()
+        //}
+
+        //$(function () {
+          //  $('#lista-media').hide()
+        //})
+
+    </script>
+</head>
+
+<body>
+
+    <div class="lista-container">
+        <li id="lista">
+            <nav>
+                <a href="">Projetos</a>
+                <a id="contact" onclick="showContact('lista-media')" style="cursor: pointer;">Contatos</a>
+                <a href="">Saiba Mais</a>
+            </nav>
+        </li>
+    </div>
+
+    <div class="area">
+        <div class="imagem">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="social-media">
+            <li id="lista-media">
+                <a href="" target="_blank"><i id='media' class='bx bxl-instagram-alt' onclick="redirectInstagram()"
+                        target='_blank'></i></a>
+                <i id='media' class='bx bxl-gmail' onclick="redirectGmail()"></i>
+                <i id='media' class='bx bxl-github' onclick="redirectGithub()"></i>
+                <i id='media' class='bx bxl-linkedin' onclick="redirectLinkedin()"></i>
+            </li>
+        </div>
+    </div>
+
+    <div class="msg">
+        <h1 id="bem-vindo">Bem-Vindo</h1>
+        <p id="paragrafo">Olá visitante, é um enorme prazer tê-lo aqui!<br>Navegue pelo o meu portfólio e conheça mais
+            sobre mim.</p>
+        <button type="button">Diga Olá <i class='bx bxl-telegram'></i></button>
+    </div>
+
+    <div class="mouse-container">
+        <i id='mouse' class='bx bx-mouse'></i>
+        <p id="scroll-down">Scroll Down :)</p>
+    </div>
+
+    <div class="projeto-cep">
+        <h1 id="cep"></h1>
+    </div>
+</body>
+
+</html>
