@@ -9,7 +9,7 @@
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -129,7 +129,7 @@ button {
     top: 130px;
     right: 30px;
 
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 5px 30px;
 
     height: 40px;
@@ -163,4 +163,54 @@ button:hover {
     height: 180px;
 
     border-radius: 50%;
+}
+
+.about {
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    height: 0;
+
+  
+    
+}
+
+#about {
+    margin-top: 1500px;
+}
+
+#p-about {
+
+    position: relative;
+    margin-top: 1650px;
+    margin-left: -95px;
+
+}
+
+.area-about {
+    height: 0px;
+}
+
+.imagem-about {
+    position: relative;
+    margin-left: -250px;
+    margin-top: 735px;
+
+
+    background-image: url(./selfie.jpg);
+    background-size: 100%;
+    background-position: center;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 10%;
+}
+
+.card {
+    padding: 40px 80px;
+    background-color: white;
 }
