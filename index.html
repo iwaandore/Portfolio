@@ -10,18 +10,6 @@
     <script type="text/javascript" src="./script.js"></script>
     <script type="text/javascript" src="./jquery-3.6.3.min.js"></script>
     <title>Document</title>
-
-    <script>
-
-        //function showContact() {
-          //  $('#lista-media').show()
-        //}
-
-        //$(function () {
-          //  $('#lista-media').hide()
-        //})
-
-    </script>
 </head>
 
 <body>
@@ -31,7 +19,7 @@
             <nav>
                 <a href="">Projetos</a>
                 <a id="contact" onclick="showContact('lista-media')" style="cursor: pointer;">Contatos</a>
-                <a href="">Saiba Mais</a>
+                <a href="#about">Saiba Mais</a>
             </nav>
         </li>
     </div>
@@ -44,8 +32,7 @@
     <div class="container">
         <div class="social-media">
             <li id="lista-media">
-                <a href="" target="_blank"><i id='media' class='bx bxl-instagram-alt' onclick="redirectInstagram()"
-                        target='_blank'></i></a>
+                <i id='media' class='bx bxl-instagram-alt' onclick="redirectInstagram()"></i>
                 <i id='media' class='bx bxl-gmail' onclick="redirectGmail()"></i>
                 <i id='media' class='bx bxl-github' onclick="redirectGithub()"></i>
                 <i id='media' class='bx bxl-linkedin' onclick="redirectLinkedin()"></i>
@@ -68,6 +55,22 @@
     <div class="projeto-cep">
         <h1 id="cep"></h1>
     </div>
+
+
+    <div class="about">
+        <div class="area-about">
+            <div class="imagem-about">
+            </div>
+        </div>
+        <h1 id="about">Sobre</h1>
+        <p id="p-about">Prazer! Me chamo André, amante dos códigos e das tecnologias,<br>
+            sou apenas um jovem estudioso e esforçado querendo engressar <br> na carreira como Dev.<br>
+
+
+        </p>
+    </div>
+
+
 </body>
 
 </html>
