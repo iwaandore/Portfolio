@@ -56,6 +56,7 @@ body {
 
 #media:hover {
     margin-left: 25px;
+    transition: all 0.20s;
 }
 
 .mouse-container {
@@ -82,6 +83,25 @@ body {
     margin-left: 20px;
 }
 
+#arrow {
+    position: relative;
+    animation: arrow_dow 1s ease-in-out infinite 1s;
+}
+
+@keyframes arrow_dow {
+    0% {
+        top: 3px;
+    }
+
+    50% {
+        top: -5px;
+    }
+
+    100% {
+        top: 3px;
+    }
+}
+
 .msg {
 
     display: flex;
@@ -97,11 +117,10 @@ body {
 
 #paragrafo {
     position: absolute;
-    font-weight: 500;
     text-align: justify;
 
     margin-top: 60px;
-    margin-left: 280px;
+    margin-left: 270px;
 }
 
 .lista-container #lista {
@@ -125,18 +144,25 @@ a {
 }
 
 button {
+    display: flex;
+    align-items: center;
+
+
     position: relative;
     top: 130px;
     right: 30px;
 
-    border-radius: 10px;
-    padding: 5px 30px;
+    border-radius: 15px;
+    padding: 25px 30px;
 
     height: 40px;
     cursor: pointer;
+
     font-size: 15px;
+    font-weight: 580;
 
     transition: ease-in-out 0.5s;
+
 }
 
 button:hover {
@@ -150,6 +176,7 @@ button:hover {
 }
 
 .imagem {
+
     position: relative;
     margin-left: 800px;
     margin-top: 100px;
@@ -163,10 +190,28 @@ button:hover {
     height: 180px;
 
     border-radius: 50%;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+
+    animation: profile__animate 8s ease-in-out infinite 1s;
+
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
 
 .about {
-  
+    
     display: flex;
     justify-content: center;
     align-content: center;
@@ -174,12 +219,12 @@ button:hover {
 
     height: 0;
 
-  
-    
 }
 
 #about {
+    position: relative;
     margin-top: 1500px;
+    margin-left: 50px;
 }
 
 #p-about {
@@ -188,6 +233,8 @@ button:hover {
     margin-top: 1650px;
     margin-left: -95px;
 
+    font-weight: 500;
+
 }
 
 .area-about {
@@ -195,8 +242,9 @@ button:hover {
 }
 
 .imagem-about {
+
     position: relative;
-    margin-left: -250px;
+    margin-left: -30px;
     margin-top: 735px;
 
 
@@ -204,13 +252,54 @@ button:hover {
     background-size: 100%;
     background-position: center;
 
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
 
     border-radius: 10%;
+
+    padding: 0;
+
 }
 
-.card {
-    padding: 40px 80px;
-    background-color: white;
+#cv {
+    display: flex;
+    align-items: center;
+
+
+    position: relative;
+    top: 910px;
+    right: 495px;
+
+    border-radius: 15px;
+    padding: 25px 30px;
+
+    height: 40px;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 580;
+
+    transition: ease-in-out 0.5s;
+}
+
+#archive {
+    position: relative;
+    transform: scale(0.90);
+}
+
+.projeto {
+
+    position: relative;
+    top: 1600px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+#projeto {
+    position: absolute;
+    margin-left: -350px;
 }
