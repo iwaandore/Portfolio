@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ebebeb;
+    color: rgb(36, 36, 36);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 40px;
+    background-color: white;
+    width: 500px;
+
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section h2 {
+    color: rgb(36, 36, 36);
+    font-size: 30px;
+    margin: 30px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: rgb(36, 36, 36);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: #ebebeb;
+
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 20px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-color: #ebebeb;
+
+    transition: all .5s;
+}
+
+form textarea:focus {
+    border-radius: 20px;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    top: 130px;
+    right: 30px;
+    margin-bottom: 10px;
+
+    border-radius: 15px;
+    border: 0;
+    padding: 25px 30px;
+
+    height: 40px;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 580;
+
+    transition: ease-in-out 0.5s;
+}
+
+form button:hover {
+    color: whitesmoke;
+    background-color: rgb(36, 36, 36);
+}
+
+/*Area Obrigado*/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    background-color: #ebebeb;
+}
+
+.text {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.paragrafo-main {
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    top: 130px;
+    right: 30px;
+    margin-bottom: 10px;
+
+    border-radius: 15px;
+    border: 0;
+    padding: 14px 40px;
+
+    height: 40px;
+    cursor: pointer;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(236, 236, 236);
+    color: rgb(36, 36, 36);
+
+    transition: ease-in-out 0.5s;
+}
+
+.btn:hover {
+    color: whitesmoke;
+    background-color: rgb(36, 36, 36);
+}
