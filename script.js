@@ -17,3 +17,7 @@ function redirectGmail() {
 function redirectInstagram() {
     location.href = 'https://www.instagram.com/iwa_andore/'
 }
+
+function redirectForm() {
+    location.href = './form/index.html'
+}
